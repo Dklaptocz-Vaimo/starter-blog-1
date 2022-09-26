@@ -1,0 +1,421 @@
+[
+  {
+    "ts": "2022-09-26T12:13:12.428Z",
+    "level": "error",
+    "error": {
+      "name": "BadRequest",
+      "entity": {
+        "sys": {
+          "space": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Space",
+              "id": "28p9vvm1oxuw"
+            }
+          },
+          "id": "blogPost",
+          "type": "ContentType",
+          "createdAt": "2017-05-11T12:17:42.862Z",
+          "updatedAt": "2017-05-17T10:55:24.031Z",
+          "createdBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "066RqBikAjzKy0SWUEtFvH"
+            }
+          },
+          "updatedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "066RqBikAjzKy0SWUEtFvH"
+            }
+          },
+          "publishedCounter": 6,
+          "version": 12,
+          "publishedBy": {
+            "sys": {
+              "type": "Link",
+              "linkType": "User",
+              "id": "066RqBikAjzKy0SWUEtFvH"
+            }
+          },
+          "publishedVersion": 11,
+          "firstPublishedAt": "2017-05-11T12:17:43.175Z",
+          "publishedAt": "2017-05-17T10:55:24.004Z"
+        },
+        "displayField": "title",
+        "name": "Blog Post",
+        "description": "",
+        "fields": [
+          {
+            "id": "title",
+            "name": "Title",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "slug",
+            "name": "Slug",
+            "type": "Symbol",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "heroImage",
+            "name": "Hero Image",
+            "type": "Link",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false,
+            "linkType": "Asset"
+          },
+          {
+            "id": "description",
+            "name": "Description",
+            "type": "RichText",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "body",
+            "name": "Body",
+            "type": "RichText",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "author",
+            "name": "Author",
+            "type": "Link",
+            "localized": false,
+            "required": false,
+            "validations": [
+              {
+                "linkContentType": [
+                  "person"
+                ]
+              }
+            ],
+            "disabled": false,
+            "omitted": false,
+            "linkType": "Entry"
+          },
+          {
+            "id": "publishDate",
+            "name": "Publish Date",
+            "type": "Date",
+            "localized": false,
+            "required": true,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false
+          },
+          {
+            "id": "tags",
+            "name": "Tags",
+            "type": "Array",
+            "localized": false,
+            "required": false,
+            "validations": [
+            ],
+            "disabled": false,
+            "omitted": false,
+            "items": {
+              "type": "Symbol",
+              "validations": [
+                {
+                  "in": [
+                    "general",
+                    "javascript",
+                    "static-sites"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "data": {
+        "status": 400,
+        "statusText": "Bad Request",
+        "message": "You need to omit a field before deleting it",
+        "details": {
+          "errors": [
+            {
+              "message": "Field needs to be omitted",
+              "path": [
+                "fields",
+                "nestedContentReference"
+              ]
+            }
+          ],
+          "contentType": {
+            "sys": {
+              "space": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Space",
+                  "id": "gv2xvcv30vzp"
+                }
+              },
+              "id": "blogPost",
+              "type": "ContentType",
+              "createdAt": "2022-09-20T09:13:29.401Z",
+              "updatedAt": "2022-09-20T09:31:33.055Z",
+              "environment": {
+                "sys": {
+                  "type": "Link",
+                  "linkType": "Environment",
+                  "id": "9031a6be-365c-4ef4-9d46-2fae72690438"
+                }
+              },
+              "revision": 2
+            },
+            "displayField": "tthc",
+            "name": "Blog Post",
+            "description": "",
+            "assembly": false,
+            "fields": [
+              {
+                "id": "tthc",
+                "apiName": "title",
+                "name": "Title",
+                "type": "Symbol",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "qaxy",
+                "apiName": "slug",
+                "name": "Slug",
+                "type": "Symbol",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "ezxt",
+                "apiName": "heroImage",
+                "name": "Hero Image",
+                "type": "Link",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false,
+                "linkType": "Asset"
+              },
+              {
+                "id": "vhao",
+                "apiName": "description",
+                "name": "Description",
+                "type": "RichText",
+                "localized": false,
+                "required": true,
+                "validations": [
+                  {
+                    "enabledNodeTypes": [
+                      "heading-1",
+                      "heading-2",
+                      "heading-3",
+                      "heading-4",
+                      "heading-5",
+                      "heading-6",
+                      "ordered-list",
+                      "unordered-list",
+                      "hr",
+                      "blockquote",
+                      "embedded-entry-block",
+                      "embedded-asset-block",
+                      "hyperlink",
+                      "entry-hyperlink",
+                      "asset-hyperlink",
+                      "embedded-entry-inline"
+                    ],
+                    "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+                  },
+                  {
+                    "enabledMarks": [
+                      "bold",
+                      "italic",
+                      "underline",
+                      "code"
+                    ],
+                    "message": "Only bold, italic, underline, and code marks are allowed"
+                  }
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "odtu",
+                "apiName": "body",
+                "name": "Body",
+                "type": "RichText",
+                "localized": false,
+                "required": true,
+                "validations": [
+                  {
+                    "enabledNodeTypes": [
+                      "heading-1",
+                      "heading-2",
+                      "heading-3",
+                      "heading-4",
+                      "heading-5",
+                      "heading-6",
+                      "ordered-list",
+                      "unordered-list",
+                      "hr",
+                      "blockquote",
+                      "embedded-entry-block",
+                      "embedded-asset-block",
+                      "hyperlink",
+                      "entry-hyperlink",
+                      "asset-hyperlink",
+                      "embedded-entry-inline"
+                    ],
+                    "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+                  },
+                  {
+                    "enabledMarks": [
+                      "bold",
+                      "italic",
+                      "underline",
+                      "code"
+                    ],
+                    "message": "Only bold, italic, underline, and code marks are allowed"
+                  }
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "plac",
+                "apiName": "author",
+                "name": "Author",
+                "type": "Link",
+                "localized": false,
+                "required": false,
+                "validations": [
+                  {
+                    "linkContentType": [
+                      "person"
+                    ]
+                  }
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false,
+                "linkType": "Entry"
+              },
+              {
+                "id": "iesu",
+                "apiName": "publishDate",
+                "name": "Publish Date",
+                "type": "Date",
+                "localized": false,
+                "required": true,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false
+              },
+              {
+                "id": "newp",
+                "apiName": "tags",
+                "name": "Tags",
+                "type": "Array",
+                "localized": false,
+                "required": false,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false,
+                "items": {
+                  "type": "Symbol",
+                  "validations": [
+                    {
+                      "in": [
+                        "general",
+                        "javascript",
+                        "static-sites"
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "id": "ZnANmkZ124jb7PLh",
+                "apiName": "nestedContentReference",
+                "name": "Nested content reference",
+                "type": "Link",
+                "localized": false,
+                "required": false,
+                "validations": [
+                ],
+                "disabled": false,
+                "omitted": false,
+                "deleted": false,
+                "linkType": "Entry"
+              }
+            ]
+          }
+        },
+        "request": {
+          "url": "/spaces/gv2xvcv30vzp/environments/master/content_types/blogPost",
+          "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/vnd.contentful.management.v1+json",
+            "X-Contentful-User-Agent": "app contentful.import/8.2.29; feature library-import; sdk contentful-management.js/7.54.2; platform node.js/v16.17.0; os macOS/v16.17.0;",
+            "CF-Sequence": "c46fbf44-f3ee-41fc-8e49-59a3650b0c13",
+            "Authorization": "Bearer ...thrNI",
+            "user-agent": "node.js/v16.17.0",
+            "Accept-Encoding": "gzip",
+            "X-Contentful-Version": 4,
+            "Content-Length": 1297
+          },
+          "method": "put",
+          "payloadData": "{\"displayField\":\"title\",\"name\":\"Blog Post\",\"description\":\"\",\"fields\":[{\"id\":\"title\",\"name\":\"Title\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"slug\",\"name\":\"Slug\",\"type\":\"Symbol\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"heroImage\",\"name\":\"Hero Image\",\"type\":\"Link\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false,\"linkType\":\"Asset\"},{\"id\":\"description\",\"name\":\"Description\",\"type\":\"RichText\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"body\",\"name\":\"Body\",\"type\":\"RichText\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"author\",\"name\":\"Author\",\"type\":\"Link\",\"localized\":false,\"required\":false,\"validations\":[{\"linkContentType\":[\"person\"]}],\"disabled\":false,\"omitted\":false,\"linkType\":\"Entry\"},{\"id\":\"publishDate\",\"name\":\"Publish Date\",\"type\":\"Date\",\"localized\":false,\"required\":true,\"validations\":[],\"disabled\":false,\"omitted\":false},{\"id\":\"tags\",\"name\":\"Tags\",\"type\":\"Array\",\"localized\":false,\"required\":false,\"validations\":[],\"disabled\":false,\"omitted\":false,\"items\":{\"type\":\"Symbol\",\"validations\":[{\"in\":[\"general\",\"javascript\",\"static-sites\"]}]}}]}"
+        },
+        "requestId": "d5347c87-841d-4351-bf50-d2d2c53fd885"
+      }
+    }
+  }
+]
